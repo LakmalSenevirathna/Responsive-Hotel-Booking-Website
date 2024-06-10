@@ -252,6 +252,44 @@ nav{
     text-align: center;
   }
 
+  .banner__container{
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  .banner__container p{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+  }
+
+  .banner__container h1{
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .banner__container button{
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .banner__container button:hover {
+    background-color: var(--primary-color-dark);
+  }
+
   @media (width < 900px) {
     .booking__container form {
       grid-template-columns: repeat(2, 1fr);
