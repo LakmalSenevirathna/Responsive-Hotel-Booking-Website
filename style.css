@@ -219,12 +219,50 @@ nav{
     color: var(--text-light);
   }
 
+  .clinet{
+    background: var(--extra-light);
+  }
+
+  .client__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .client__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .client__card img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-top: 1rem;
+  }
+
+  .client__card p{
+    padding: 20px;
+    text-align: center;
+  }
+
   @media (width < 900px) {
     .booking__container form {
       grid-template-columns: repeat(2, 1fr);
     }
 
     .card__grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .client__box{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
@@ -251,6 +289,11 @@ nav{
 
     .card__grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .client__box{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
     }
   
   }
