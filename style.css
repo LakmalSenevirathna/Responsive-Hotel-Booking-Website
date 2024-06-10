@@ -34,6 +34,13 @@ img{
     padding: 5rem 1rem;
 }
 
+.section__header{
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 nav{
     max-width: var(--max-width);
     margin: auto;
@@ -178,9 +185,48 @@ nav{
     background-color: var(--primary-color-dark);
   }
 
+  .card__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+
+  .card{
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .card__content{
+    padding: 1rem;
+  }
+
+  .card__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+    gap: 1rem;
+  }
+
+  .card_title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  .card__subtitle{
+    color: var(--text-light);
+  }
+
   @media (width < 900px) {
     .booking__container form {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card__grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
   
   }
@@ -201,6 +247,10 @@ nav{
   
     .booking__container form {
       grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card__grid{
+        grid-template-columns: repeat(1, 1fr);
     }
   
   }
